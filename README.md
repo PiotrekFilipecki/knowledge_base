@@ -1,6 +1,4 @@
-# VML Frontend Skeleton
-
-VML Frontend Skeleton to projekt, który pozwala w prosty sposób rozpocząć pracę nad nowym projektem. Rzeczy, które za każdym razem trzeba tworzyć przy nowym projekcie zostały tutaj już zrobione.
+# Knowledge Base
 
 ## Style
 
