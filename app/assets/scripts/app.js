@@ -4,8 +4,10 @@
 import Preloader from './modules/preloader';
 import './modules/isMobile';
 import './modules/ga';
+import './modules/drums';
+import './modules/minimum';
 
-window.addEventListener('load', () => {
+/*window.addEventListener('load', () => {
     console.log('vml skeleton');
     Preloader.hide();
-});
+});*/

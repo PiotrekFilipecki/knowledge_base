@@ -26,3 +26,137 @@
 @import "layout/footer";
 
 @import "shame";
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100');
+*{
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+}
+html {
+  font-size: 10px;
+  background-size: cover;
+}
+
+a{
+  color: #fbfbfb;
+  text-decoration: none;
+}
+/*drumkit styles*/
+.keys {
+  display: flex;
+  flex: 1;
+  min-height: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  border: .4rem solid black;
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  text-shadow: 0 0 .5rem black;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ffc600;
+}
+
+/*drumkit styles*/
+
+header, footer{
+  background-color: rgb(109,117,120) 
+}
+
+header{
+  border-bottom:3px solid rgb(237,227,180);
+}
+
+footer{
+  border-top:3px solid rgb(237,227,180);
+}
+
+header h1, footer h1{
+  padding: 1em;
+  color:#fbfbfb;
+  font-weight: 300;
+}
+
+.js-content-list{ 
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  font-size: 2em;
+  list-style-type: none;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+
+.js-content-list li{
+  flex-grow: 1;
+  width: 20%;
+  align-self: center;
+  display: flex;
+  height: 120px;
+  justify-content: flex-end;
+  align-items: center;
+  transition: all ease 0.5s;
+
+}
+
+.js-content-list li:nth-child(odd) {
+  background-color: rgb(230,179,154);
+}
+
+.js-content-list li:nth-child(odd):hover {
+  background-color: rgba(230,203,165, 0.8);
+}
+
+.js-content-list li:nth-child(even) {
+  background-color: rgb(230,203,165);
+}
+
+.js-content-list li:nth-child(even):hover {
+  background-color: rgba(230,179,154, 0.8);
+}
+
+.js-content-list li a{
+  padding: 1em;
+  transition: all ease 0.5s;
+}
+
+.js-content-list li:hover a {
+   color: rgb(109,117,120);
+}
+
