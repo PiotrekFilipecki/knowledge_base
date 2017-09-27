@@ -5,7 +5,8 @@ import Preloader from './modules/preloader';
 import './modules/isMobile';
 import './modules/ga';
 import './modules/drums';
-import './modules/minimum';
+//import './modules/minimum';
+import './modules/clickCounter';
 
 /*window.addEventListener('load', () => {
     console.log('vml skeleton');
