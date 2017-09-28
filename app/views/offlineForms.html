@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <meta property="og:site_name" content="">
+        <meta property="og:title" content="">
+        <meta property="og:description" content="">
+        <meta property="og:url" content="">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="">
+        <title>Hello World!</title>
+        <link href="resources/styles/main.css" rel="stylesheet">
+    </head>
+    <body>
+<header>
+  <h1>JS knowledge base, playground, rabbit holes, excersises etc. </h1>
+</header>
+<h3>https://mxb.at/blog/offline-forms/</h3>
+<div>
+  <form action="" method="POST" id="example-form" class="form" autocomplete="off">
+    <fieldset class="form__fieldset">
+
+      <div class="form__field">
+        <label for="name" class="form__label">Name</label>
+        <input 
+          type="text" 
+          id="name" 
+          class="form__input" 
+          name="name" 
+          required
+        >
+      </div>
+
+      <div class="form__field">
+        <label for="email" class="form__label">Email</label>
+        <input 
+          type="email" 
+          id="email" 
+          class="form__input" 
+          name="email" 
+          required
+        >
+      </div>
+
+      <div class="form__field">
+        <label for="shirtsize" class="form__label">T-Shirt Size</label>
+        <select 
+          id="shirtsize" 
+          class="form__input" 
+          name="shirtsize"
+        >
+          <option value="S">Small</option>
+          <option value="M">Medium</option>
+          <option value="L">Large</option>
+          <option value="XL">XLarge</option>
+        </select>
+      </div>
+
+      <div class="form__actions">
+        <button type="submit" class="btn btn--primary" id="submit">Submit Form</button>
+        <div id="feedback" class="form__feedback" aria-live="assertive" role="alert"></div>
+      </div>
+
+    </fieldset>
+  </form>
+
+  <p class="more">Read <a href="https://mxb.at/blog/offline-forms/">more about this here</a>.</p>
+</div>
+
+<footer>
+  <h1>footer content soon</h1>
+</footer>
+
+        <script src="resources/scripts/bundle.js"></script>
+    </body>
+</html>

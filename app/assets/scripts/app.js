@@ -7,6 +7,7 @@ import './modules/ga';
 import './modules/drums';
 //import './modules/minimum';
 import './modules/clickCounter';
+import './modules/offlineFriendlyForms';
 
 /*window.addEventListener('load', () => {
     console.log('vml skeleton');
