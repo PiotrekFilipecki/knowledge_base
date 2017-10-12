@@ -1,0 +1,40 @@
+/*element zawierający karuzelę*/
+.box{
+ display:flex;
+ width:150px;
+ overflow:hidden;
+ font-size: 1.5em;
+ margin: 2em auto;
+ }
+
+/*karuzela*/
+.carousel{
+ display:flex;
+ list-style:none;
+ padding:0;
+ width:350px;
+ position:relative;
+ left:-50px;
+ transform:translateX(50px);
+ }
+
+/*elementy karuzeli*/
+.carousel-item{
+ display:inline-block;
+ width:50px;
+ order:2;
+ }
+
+.is-first{
+ order:1;
+ }
+
+/*płynny ruch*/
+.is-steady{
+ transform:none;
+ transition:transform 1s ease-in-out;
+}
+
+.is-back{
+  transform:translateX(-50px);
+}

@@ -1,3 +1,4 @@
+if(window.location.href.indexOf('clickCounter') > -1){
 let model = {
     currentCat: null,
     cats: [
@@ -91,6 +92,7 @@ let catListView = {
 
         let cats = octopus.getCats();
         this.catListElem.innerHTML = '';
+        
 
         for (i=0; i < cats.length; i++){
             cat = cats[i];
@@ -110,3 +112,5 @@ let catListView = {
 };
 
 octopus.init();
+
+}
