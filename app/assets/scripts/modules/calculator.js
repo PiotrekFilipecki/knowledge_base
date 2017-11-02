@@ -11,14 +11,14 @@
 
     // zmienne
 
-    var viewer = el("#viwer"), // 'ekran' kalkulatora - wyswietla wynik
-        equals = el("#equals"), // znak rownosci
-        nums = el(".num"), // numery
-        ops = el(".ops"), // operatory
-        theNum = "", // aktualnie wskazany numer
-        oldNum = "", // pierwszy numer
-        resultNum, //wynik
-        operator; // operator
+var viewer = el("#viewer"),
+    equals = el("#equals"),
+    nums = el(".num"),
+    ops = el(".ops"),
+    theNum = "",
+    oldNum = "",
+    resultNum,
+    operator;
     
     //gdy numer jest kliknięty, wybiera właśnie ten numer
     var setNum = function() { // jesli wynik zostal wyswietlony - number resetowany
@@ -80,6 +80,33 @@
 
      oldNum = 0;
      theNum = resultNum;
+};
+
+var clearAll = function() {
+    oldNum = '';
+    theNum = '';
+    viewer.innerHTML = "0";
+    equals.setAttribute("data-result", resultNum);
+};
+
+//click events
+
+//numbers
+
+for (var i = 0, l = nums.length; i < l; i++) {
+    nums[i].onclick = setNum;
+}
+
+for (var i = 0, l = ops.length; i < l; i++) {
+    ops[i].onclick = moveNum;
+}
+
+equals.onclick = displayNum;
+
+el("#clear").onclick = clearAll;
+
+el("#reset").onclick = function() {
+    window.location = window.location;
 };
 
 
