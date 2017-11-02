@@ -10,13 +10,14 @@ import './modules/drums';
 import './modules/offlineFriendlyForms';
 import './modules/flexboxCarousel';
 import './modules/clickCounter';
+import './modules/calculator';
 
 /*window.addEventListener('load', () => {
     console.log('vml skeleton');
     Preloader.hide();
 });*/
 
-// js playground
+/* js playground
 
 let array = [];
 
@@ -48,4 +49,63 @@ let alertElement = function (value, index) {
 
 let array2 = [1, 'dwa', 3, 'cztery', 5];
 
-array2.forEach(alertElement);
+array2.forEach(alertElement);*/
+
+/* let var rabbit hole 
+
+var funcs = [];
+
+for(let i = 0; i < 5; i++){
+    funcs.push( function(){
+        console.log(i);
+    });
+}
+
+funcs[3]();
+
+var funcs = [];
+
+for(var i = 0; i < 5; i++){
+    funcs.push( function(){
+        console.log(i);
+    });
+}
+
+funcs[3]();
+
+var funcs = [];
+
+for(var i = 0; i < 5; i++){
+    let j = i;
+    funcs.push( function(){
+        console.log(j);
+    });
+}
+
+funcs[3]();
+
+var funcs = [];
+
+for(let i = 0; i < 5; i++){
+    var j = i;
+    funcs.push( function(){
+        console.log(j);
+    });
+}
+
+funcs[3]();*/
+
+/* function count(x) {
+    let numbers = [];
+    if(x % 2 == 0){
+        for(let i = 0; i < x; i += 2){
+            numbers.push(i);
+        }
+    } else {
+        for (i = 1; i < x; i += 2){
+            numbers.push(i);
+        }
+    }
+    return numbers;
+    console.log(numbers);
+}*/
